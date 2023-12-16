@@ -1,0 +1,132 @@
+body header nav .container .inside-nav {
+  display: flex;
+  padding: 15px 0;
+}
+body header nav .container .inside-nav ul {
+  display: flex;
+  padding: 0 0 0 30px;
+}
+body header nav .container .inside-nav ul li {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+body header nav .container .inside-nav ul li a {
+  text-decoration: none;
+  color: #4859a2;
+  font-weight: 600;
+}
+body header nav .container .inside-nav ul li .active {
+  color: #ce4239;
+}
+body section {
+  margin-top: 40px;
+}
+body section .container .main-box {
+  margin: 0 50px;
+  position: relative;
+  background-color: #5678d1;
+  padding: 80px 155px;
+}
+body section .container .main-box h1 {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  font-size: 25px;
+  font-weight: 550;
+  color: white;
+  line-height: 27px;
+}
+body section .container .main-box h1 span {
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body section .container .main-box img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+body section .container .features-box {
+  margin: 100px 50px 0 50px;
+}
+body section .container .features-box h3 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+body section .container .features-box .features-content {
+  font-family: sans-serif;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+}
+body section .container .features-box .features-content .feature {
+  background-color: #f2f2f2;
+  padding: 15px 0px 20px 15px;
+}
+body section .container .features-box .features-content .feature h4 {
+  color: #4859a2;
+  padding-bottom: 10px;
+}
+body section .container .features-box .features-content .feature .feature-inside {
+  display: flex;
+}
+body section .container .features-box .features-content .feature .feature-inside img {
+  width: 100px;
+  height: 120px;
+  object-fit: contain;
+}
+body section .container .features-box .features-content .feature .feature-inside .feature-text {
+  font-size: 17px;
+  padding-top: 20px;
+  padding-left: 30px;
+  width: 40ch;
+}
+body footer .container .medias {
+  margin: 50px 0px 30px 50px;
+}
+body footer .container .medias ul {
+  display: flex;
+}
+body footer .container .medias ul li a img {
+  width: 20px;
+  height: 20px;
+}
+body footer .container .medias ul #fb {
+  padding-right: 10px;
+  border-right: #acafd3 2px solid;
+}
+body footer .container .medias ul #yt {
+  padding-left: 10px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .features-content {
+    grid-template-columns: auto !important;
+  }
+  .features-content .feature {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

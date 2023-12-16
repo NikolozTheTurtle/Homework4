@@ -1,0 +1,156 @@
+body {
+    header {
+        nav {
+            .container {
+                .inside-nav {
+                    display: flex;
+                    padding: 15px 0;
+                    img {
+    
+                    }
+                    ul {
+                        display: flex;
+                        padding: 0 0 0 30px;
+                        li {
+                            display: flex;
+                            align-items: center;
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            a {
+                                text-decoration: none;
+                                color: #4859a2;
+                                font-weight: 600;
+                            }
+                            .active {
+                                color: #ce4239;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section {
+        margin-top: 40px;
+        .container {
+            .main-box {
+                margin: 0 50px;
+                position: relative;
+                background-color: #5678d1;   
+                padding: 80px 155px;            
+                h1 {
+                    position: absolute;
+                    left: 30px;
+                    top: 20px;
+                    font-size: 25px;
+                    font-weight: 550;
+                    color: white;
+                    line-height: 27px;
+                    span {
+                        font-weight: 600;
+                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+                }
+                img {
+                    max-width: 100%;
+                    display: block;
+                    margin: auto    ;
+                }
+            }
+            .features-box {
+                margin: 100px 50px 0 50px;
+                h3 {
+                    font-weight: bold;
+                    font-size: 20px;
+                    font-family: sans-serif;
+                }
+                .features-content {
+                    font-family: sans-serif;
+                    margin-top: 30px;
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    column-gap: 20px;
+                    .feature {
+                        background-color: #f2f2f2;
+                        padding: 15px 0px 20px 15px;
+                        h4 {
+                            color: #4859a2;
+                            padding-bottom: 10px;
+                        }
+                        .feature-inside {
+                            display: flex;
+                            img {
+                                width: 100px;
+                                height: 120px;
+                                object-fit: contain;
+                            }
+                            .feature-text {
+                                font-size: 17px;
+                                padding-top: 20px;
+                                padding-left: 30px;
+                                width: 40ch;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .container {
+            .medias {
+                margin: 50px 0px 30px 50px;
+                ul {
+                    display: flex;
+                    li {
+                        a {
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                    #fb {
+                        padding-right: 10px;
+                        border-right: #acafd3 2px solid;   
+                    }
+                    #yt {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// basic container code
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+// responsive and container widths (P.S. responsive only works down to 768px, after that I was lazy to do :) )
+@media (min-width: 768px) and (max-width: 991px) {
+.container {
+      width: 750px;
+    }
+    .features-content {
+        grid-template-columns: auto !important;
+        .feature {
+            margin-bottom: 20px;
+        }
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
