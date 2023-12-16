@@ -1,0 +1,119 @@
+body {
+    header {
+        nav {
+            margin-bottom: 20px;
+            .container {
+                .inside-nav {
+                    display: flex;
+                    padding: 15px 0;
+                    ul {
+                        display: flex;
+                        padding: 0 0 0 30px;
+                        li {
+                            display: flex;
+                            align-items: center;
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            a {
+                                text-decoration: none;
+                                color: #4859a2;
+                                font-weight: 600;
+                            }
+                            .active {
+                                color: #ce4239;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section {
+        .news-main {
+            .news-card {
+                margin-bottom: 40px;
+                .date {
+                    .d-number {                        
+                        display: inline-block;
+                            background-color: #4859a2;
+                            color: white;
+                            font-size: 32px;
+                            padding: 5px 5px;
+                    }
+                    .d-month {
+                        color: #7b89be;
+                    }
+                }
+                .news-content {
+                    color: #696969;
+                    margin-top: 10px;
+                    h1 {
+                        font-family: sans-serif;
+                        padding-bottom: 15px;
+                    }
+                    .news-inside {
+                        display: flex;
+                        img {
+                            width: 200px;
+                            height: 160px;
+                        }
+                        .news-text {
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .container {
+            .medias {
+                margin: 50px 0px 30px 0px;
+                ul {
+                    display: flex;
+                    li {
+                        a {
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                    #fb {
+                        padding-right: 10px;
+                        border-right: #acafd3 2px solid;   
+                    }
+                    #yt {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// basic container code
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+// responsive and container widths (P.S. responsive only works down to 768px, after that I was lazy to do :) )
+@media (min-width: 768px) {
+.container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
